@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?familyfamily=Nunito+Sans:wght@300;700&display=swap');
+:root{
+    font-size: 16px;
+    --bg-main-color: #012836;
+    --primary-color: #32f5c8;
+    --twiter-bg-color: #008ABE;
+    --font-color: #ffffffb2;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Nunito Sans', sans-serif;
+}
+.main-container{
+    background: var(--bg-main-color);
+    width: 100vw;
+    height: 100vh;
+}
+.title{
+    color: var(--primary-color);
+}
+.subtitle{
+    color: var(--font-color);
+}
+a{
+    text-decoration: none;
+}
+.cta-btn{
+    font-size: 1.75rem;
+    padding: 1.3rem;
+    background: var(--primary-color);
+    color: var(--bg-main-color);
+    font-weight: 700;
+    border-radius: .25rem;
+}
+.avatar-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.text-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+    padding:2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.footer .subtitle{
+    font-size: 1.75rem;
+    letter-spacing: 3px;
+    letter-spacing: 0;
+}
+.main-title{
+    font-size: 3.4rem;
+    letter-spacing: 3px;
+    font-weight: bold;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+}
+.main-text{
+    position: relative;
+    top: -3.2rem;
+}
+.main-text .subtitle{
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+    line-height: 1.3;
+    max-width: 600px;
+}
+.avatar{
+    position: absolute;
+}
+.avatar1,.avatar4,.avatar5{
+    display: none;
+}
+.avatar2{
+    transform: scale(1.05);
+    right: 10px;
+    top: 14%;
+}
+.avatar3{
+    transform: scale(.9);
+    top: 15%;
+    left: 14%;
+}
+
+@media (min-width : 800px){
+    .text-container{
+        padding: 3rem;
+    }
+    .main-text{
+        top: 0;
+    }
+    .main-text .main-title{
+        line-height: normal;
+        font-size: 5rem;
+        font-weight: 600;
+    }
+     .main-text .subtitle, .footer .subtitle{
+        font-size: 1.4rem;
+        max-width: 450px;
+    }
+    .avatar1,.avatar4,.avatar5{
+        display: block;
+    }
+    .avatar1{
+        right: 2rem;
+        top: 30%;
+        transform: scale(.9);
+    }
+    .avatar2{
+        transform: scale(.9);
+        top:2.5rem;
+        right: 2rem;
+    }
+    .avatar3{
+        top: 10%;
+        left: 3rem;
+    }
+    .avatar4{
+        transform: scale(.9);
+        bottom: 4rem;
+        right: 3rem;
+    }
+    .avatar5{
+        transform: scale(.9);
+        top: 20%;
+        right: 25%;
+    }
+}
+@media (min-width: 1000px){
+    .text-container{
+        top: -2rem;
+       width: 90%;
+       margin: auto;
+       padding-bottom: 10rem;
+    }
+    .main-text .main-title{
+        font-size: 8rem;
+    }
+    .avatar1{
+        transform: scale(1);
+        top: 40%;
+        right: 5%;
+    }
+    .avatar2{
+        transform: scale(1);
+        top: 5rem;
+        right: 7%;
+    }
+    .avatar3{
+        transform: scale(1);
+        top: 15%;
+    }
+    .avatar4{
+        transform: none;
+        bottom: 5rem;
+        right: 10%;
+    }
+    .avatar5{
+        transform: none;
+        top: 10%;
+        right: 20%;
+    }
+}
